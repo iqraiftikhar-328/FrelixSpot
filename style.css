@@ -137,11 +137,25 @@ body {
   text-align: center;
   box-shadow: 0 12px 28px -8px rgba(124, 58, 237, 0.08);
   border: 1px solid #f0e9ff;
+  align-items:flex-end;
 }
 
-.hero-emoji {
-  font-size: 4rem;
-  margin-bottom: 12px;
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  display: block;
 }
 
 /* CTA button */
@@ -206,6 +220,7 @@ body {
 .service-card:hover {
   background: #faf5ff;
   border-color: #c4b5fd;
+  border-top: 6px solid #a855f7;
   transform: translateY(-5px);
   box-shadow: 0 20px 30px -12px rgba(124, 58, 237, 0.15);
 }
@@ -243,17 +258,20 @@ body {
   border-radius: 40px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #6d28d9;
   transition: 0.2s;
   margin-top: 6px;
   width: fit-content;
+  border: #1e1a2f solid 1px;
 }
 
 .service-link:hover {
-  background: #ede9fe;
+  color: #ede9fe;
   gap: 10px;
-  color: #5b21b6;
+  background: #6d28d9;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px -12px rgba(124, 58, 237, 0.15);
 }
 
 /* Information section about Fiverr */
